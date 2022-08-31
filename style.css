@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: black;
+    font-family: 'Segoe UI',sans-serif;
+    margin-top: 100px;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+}   
+#headline{
+    color:skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    grid-area: heading;
+}
+.container{
+    border-radius: 40px;
+    box-shadow: 2px 2px 20px 2px steelblue;
+    padding: 35px;
+    margin:10px;
+    
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+        'heading heading heading heading'
+        'input_box input_box input_box input_box'
+        'btn_7 btn_8 btn_9 btn_delete'
+        'btn_4 btn_5 btn_6 btn_minus'
+        'btn_1 btn_2 btn_3 btn_multiply'
+        'btn_point btn_zero btn_divide btn_add'
+        'btn_curlybraces1 curlybraces2 btn_clear btn_add'
+        'btn_calculate btn_calculate btn_calculate btn_calculate'
+    ;
+
+    background-color:black;
+}
+.btn{
+    padding:10px;
+    margin:5px;
+    color:white;
+    background: steelblue;
+    border-radius: 15px;
+    border:none;
+
+}
+.input_box{
+    grid-area: input_box;
+    
+}
+.btn:hover{
+    padding:10px;
+    margin:5px;
+    color:white;
+    background: rgb(47, 88, 122);
+}
+#result{
+    padding:10px;
+    margin:5px;
+    text-align: right;
+    grid-area: result;
+    font-size:25px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+    border:none;
+    box-shadow: 1px 1px 10px 1px steelblue;
+    margin-bottom: 20px;
+}
+#btn_1{
+    grid-area: btn_1;
+}
+#btn_2{
+    grid-area: btn_2;
+}
+#btn_3{
+    grid-area: btn_3;
+}
+#btn_4{
+    grid-area: btn_4;
+}
+#btn_5{
+    grid-area: btn_5;
+}
+#btn_6{
+    grid-area: btn_6;
+}
+#btn_7{
+    grid-area: btn_7;
+}
+#btn_8{
+    grid-area: btn_8;
+}
+#btn_9{
+    grid-area: btn_9;
+}
+#btn_zero{
+    grid-area: btn_zero;
+}
+#btn_divide{
+    grid-area: btn_divide;
+}
+#btn_add{
+    grid-area: btn_add;
+    font-size: 20px;
+}
+#btn_point{
+    grid-area: btn_point;
+}
+#btn_multiply{
+    grid-area: btn_multiply;
+}
+#btn_calculate{
+    grid-area: btn_calculate;
+    
+}
+#btn_clear{
+    grid-area: btn_clear;
+}
+#btn_curlybraces1{
+    grid-area: btn_curlybraces1;
+}
+#btn_curlybraces12{
+    grid-area: btn_curlybraces2;
+}
+#btn_minus{
+    grid-area: btn_minus;
+}
+#btn_delete{
+    grid-area: btn_delete;
+}
+
+footer,footer a{
+    text-decoration: none;
+    margin-top:40px;
+    color:white;
+    text-align:center;
+    margin-bottom: 5px;
+}
+footer a:hover{
+    text-decoration: none;
+    margin-top:40px;
+    color:steelblue;
+    text-align:center;
+    margin-bottom: 5px;
+
+}
